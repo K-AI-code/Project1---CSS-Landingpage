@@ -1,3 +1,76 @@
-body{
-    background-color: aliceblue;
+/* set start conditions */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* variables */
+:root {
+  --blueHue: rgb(45, 85, 245);
+}
+/* header nav bar styles */
+.header-nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5em;
+  list-style-type: none;
+  background-color: rgb(176, 174, 174);
+}
+
+.header-nav > li > a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  padding: 0.5em 1em;
+}
+
+/* Section Header styles*/
+.header-main {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.header-main-nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5em;
+  list-style-type: none;
+  text-align: right;
+}
+.header-main-nav > li > a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  padding: 0.5em 1em;
+}
+
+.company-logo{
+    margin-top: 1em;
+    size: auto;
+}
+
+/* input header */
+.input-header {
+    width: 25em;
+    padding: 10px;
+    font-size: 12px;
+    border-width: 4px;
+    border-color: #CCCCCC;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-style: double;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(66,66,66,.57);
+    text-shadow: 0px 0px 5px rgba(66,66,66,.75);
+}
+.input-header:focus {
+    outline:none;
+}
+
+/* Adaptions for mobile devices */
+@media (max-width: 680px) {
+  .header-nav {
+    display: none;
+  }
 }
